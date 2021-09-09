@@ -5,24 +5,27 @@ import store from './store'
 import axios from 'axios'
 import less from 'less'
 import ElementUI from 'element-ui';
+import * as echarts from 'echarts'
 import 'element-ui/lib/theme-chalk/index.css';
 import './assets/css/mainCss.css'
 import './assets/css/compCss.css'
 
 Vue.config.productionTip = false
+Vue.prototype.$echarts = echarts
 
 Vue.use(ElementUI)
 Vue.use(less)
 
+
 // 全局守卫
-router.beforeEach((to,from,next)=>{
-  if(to.path == '/Login' || to.path == '/register'){
-    next();
-  }else{
-    alert('您还没有登录，请先登录');
-    next('/Login');
-  }
-})
+// router.beforeEach((to,from,next)=>{
+//   if(to.path == '/Login' || to.path == '/College'){
+//     next('/College');
+//   }else{
+//     alert('您还没有登录，请先登录');
+//     next('/Login');
+//   }
+// })
 
 new Vue({
   router,

@@ -13,12 +13,12 @@
           <div v-show="modelActive == 1">
             <el-input v-model="login.userName" placeholder="请输入内容"></el-input>
             <el-input v-model="login.passWord" placeholder="请输入内容" show-password></el-input>
-            <el-button type="primary" @click="LoginBtn('login')">主要按钮</el-button>
+            <el-button type="primary" @click="LoginBtn('login')">登陆</el-button>
           </div>
            <div v-show="modelActive == 2">
             <el-input v-model="register.userNmae" placeholder="请输入用户名"></el-input>
             <el-input v-model="register.passWord" placeholder="请输入登陆" show-password></el-input>
-            <el-button type="primary" @click="LoginBtn('register')">主要按钮</el-button>
+            <el-button type="primary" @click="LoginBtn('register')">注册</el-button>
           </div>
         </div>
       </div>
