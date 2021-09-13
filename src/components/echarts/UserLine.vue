@@ -25,7 +25,7 @@ export default {
         title: {
           text: "年度销售额",
           textStyle: {
-            fontSize: 17,
+            fontSize: 16,
             color: "white",
           },
           left: 20,
@@ -72,6 +72,34 @@ export default {
         series: [
           {
             name: "Line 1",
+            type: "line",
+            stack: "总量",
+            smooth: true,
+            lineStyle: {
+              width: 2,
+              color:'#FF3EA9'
+            },
+            showSymbol: false,
+            areaStyle: {
+              opacity: 0.8,
+              color: new this.$echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                {
+                  offset: 0,
+                  color: "rgba(201, 52, 170)",
+                },
+                {
+                  offset: 1,
+                  color: "rgba(11, 31, 68)",
+                },
+              ]),
+            },
+            emphasis: {
+              focus: "series",
+            },
+            data: [140, 232, 101, 264, 90, 340, 250,120,303,302,201,12],
+          },
+           {
+            name: "Line 2",
             type: "line",
             stack: "总量",
             smooth: true,

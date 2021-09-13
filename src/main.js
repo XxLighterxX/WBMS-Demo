@@ -6,6 +6,9 @@ import axios from 'axios'
 import less from 'less'
 import ElementUI from 'element-ui';
 import * as echarts from 'echarts'
+
+import './assets/utils/rem.js';
+import 'lib-flexible/flexible.js'
 import 'element-ui/lib/theme-chalk/index.css';
 import './assets/css/mainCss.css'
 import './assets/css/compCss.css'

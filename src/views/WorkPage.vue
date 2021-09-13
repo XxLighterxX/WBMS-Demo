@@ -5,7 +5,7 @@
         <Aside></Aside>
       </el-aside>
       <el-container>
-        <el-header  style="padding:0;margin:0">
+        <el-header style="padding:0;margin:0">
           <Header></Header>
         </el-header>
         <el-main>
@@ -41,17 +41,20 @@ export default {
 </script>
 <style lang='less' scoped>
 .WorkView {
-  position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  overflow: hidden;
+  min-width: 100%;
+  min-height: 100%;
   .el-aside {
-    height: 100vh;
-    background-color: #0F2850;
+    height: 969px;
+    background-color: #0f2850;
   }
-  .el-main{
-     background-color: #182F59;
+  .el-main {
+    height: calc(969PX - 90PX);
+    background-color: #182f59;
+    padding: 15px 0;
   }
 }
 .Box {

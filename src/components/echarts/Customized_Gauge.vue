@@ -1,5 +1,5 @@
 <template>
-  <div ref="main" style="width: 400px;height:150px;">
+  <div ref="main" style="width: 100%;height:100%">
 
   </div>
 </template>
@@ -64,10 +64,10 @@ export default {
               valueAnimation: true,
               fontSize: 16,
               color: "white",
-              offsetCenter: [0, "70%"],
+              offsetCenter: [0, "90%"],
             },
             // 图表大小
-            radius: "60%",
+            radius: "100%",
             // 标题
             title: {
               offsetCenter:[-120,'-5%'],
