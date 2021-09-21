@@ -6,6 +6,7 @@ import axios from 'axios'
 import less from 'less'
 import ElementUI from 'element-ui';
 import * as echarts from 'echarts'
+import drag from './views/DragImage';
 
 import './assets/utils/rem.js';
 import 'lib-flexible/flexible.js'
